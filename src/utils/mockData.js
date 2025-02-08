@@ -1,7 +1,7 @@
 export const item = [
   {
     name: "LED Bulb",
-    price: "25-35",
+    price: "35",
     detail: "Energy-efficient LED bulb with warm white light",
     type:"bulb",
     rating: "4.2",
@@ -9,7 +9,7 @@ export const item = [
   },
   {
     name: "Smart LED Bulb",
-    price: "40-50",
+    price: "50",
     detail: "Wi-Fi enabled smart LED bulb with voice control",
     type:"bulb",
     rating: "4.5",
@@ -17,7 +17,7 @@ export const item = [
   },
   {
     name: "Power Strip",
-    price: "15-25",
+    price: "25",
     detail: "Multi-plug power strip with surge protection",
     type:"strip",
     rating: "4.3",
@@ -25,7 +25,7 @@ export const item = [
   },
   {
     name: "Wireless Doorbell",
-    price: "30-40",
+    price: "40",
     detail: "Battery-powered wireless doorbell with multiple chimes",
     type:"strip",
     rating: "4.6",
@@ -33,7 +33,7 @@ export const item = [
   },
   {
     name: "Electric Kettle",
-    price: "20-35",
+    price: "20",
     detail: "1.5L stainless steel electric kettle with auto shut-off",
     type:"strip",
     rating: "4.4",
@@ -41,7 +41,7 @@ export const item = [
   },
   {
     name: "Extension Cord",
-    price: "10-20",
+    price: "10",
     detail: "5-meter heavy-duty extension cord",
     rating: "4.1",
     type:"cooler",
@@ -49,7 +49,7 @@ export const item = [
   },
   {
     name: "Portable Fan",
-    price: "25-40",
+    price: "25",
     detail: "Rechargeable USB-powered portable fan",
     type:"fan",
     rating: "4.7",
@@ -57,7 +57,7 @@ export const item = [
   },
   {
     name: "Rechargeable LED Torch",
-    price: "18-28",
+    price: "18",
     detail: "Long-lasting LED torch with adjustable focus",
     type:"bulb",
     rating: "4.5",
@@ -65,7 +65,7 @@ export const item = [
   },
   {
     name: "Voltage Stabilizer",
-    price: "50-70",
+    price: "50",
     detail: "Automatic voltage stabilizer for home appliances",
     type:"cooler",
     rating: "4.2",
@@ -73,7 +73,7 @@ export const item = [
   },
   {
     name: "Smart Plug",
-    price: "30-45",
+    price: "45",
     detail: "Wi-Fi enabled smart plug with app control",
     type:"cooler",
     rating: "4.6",
@@ -81,7 +81,7 @@ export const item = [
   },
   {
     name: "Electric Iron",
-    price: "35-50",
+    price: "50",
     detail: "Non-stick dry iron with adjustable temperature",
     type:"iron",
     rating: "4.3",
@@ -89,7 +89,7 @@ export const item = [
   },
   {
     name: "Portable Power Bank",
-    price: "25-60",
+    price: "60",
     detail: "10,000mAh portable power bank with fast charging",
     type:"cooler",
     rating: "4.8",
@@ -97,7 +97,7 @@ export const item = [
   },
   {
     name: "Ceiling Fan",
-    price: "45-80",
+    price: "80",
     detail: "Energy-efficient ceiling fan with three-speed control",
     type:"fan",
     rating: "4.4",
@@ -105,7 +105,7 @@ export const item = [
   },
   {
     name: "Hair Dryer",
-    price: "20-40",
+    price: "40",
     detail: "Lightweight and powerful hair dryer",
     type:"cooler",
     rating: "4.5",
@@ -113,7 +113,7 @@ export const item = [
   },
   {
     name: "Electric Heater",
-    price: "60-90",
+    price: "90",
     detail: "Compact room heater with overheat protection",
     type:"heater",
     rating: "4.2",
@@ -121,7 +121,7 @@ export const item = [
   },
   {
     name: "Induction Cooktop",
-    price: "50-75",
+    price: "75",
     detail: "Fast heating induction cooktop with digital display",
     type:"cooler",
     rating: "4.5",
@@ -129,7 +129,7 @@ export const item = [
   },
   {
     name: "Emergency Light",
-    price: "15-30",
+    price: "15",
     detail: "Rechargeable LED emergency light",
     typeof:"bulb",
     rating: "4.3",
@@ -137,7 +137,7 @@ export const item = [
   },
   {
     name: "Digital Multimeter",
-    price: "20-45",
+    price: "21",
     detail: "Compact digital multimeter for electrical testing",
     type:"cooler",
     rating: "4.6",
@@ -145,7 +145,7 @@ export const item = [
   },
   {
     name: "Electric Screwdriver",
-    price: "30-55",
+    price: "55",
     detail: "Cordless rechargeable electric screwdriver",
     type:"cooler",
     rating: "4.4",
@@ -153,7 +153,7 @@ export const item = [
   },
   {
     name: "Portable Bluetooth Speaker",
-    price: "40-65",
+    price: "65",
     detail: "Waterproof portable Bluetooth speaker with deep bass",
     rating: "4.8",
     type:"spekar",

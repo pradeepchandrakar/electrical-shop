@@ -13,7 +13,8 @@ import Spekar from "./Spekar";
 function Products() {
   const [filteredProducts, setFilteredProducts] = useState(item);
   const [isTopRated, setIsTopRated] = useState(false);
-  const [selectedType, setSelectedType] = useState(""); // To track product type filter
+  const [selectedType, setSelectedType] = useState("");
+  const [sortOrder, setSortOrder] = useState(""); // New state for sorting
 
   function handleFilteredProducts(filteredData) {
     setFilteredProducts(filteredData);
@@ -24,17 +25,21 @@ function Products() {
   }
 
   function filterByType(type) {
-    setSelectedType(type === selectedType ? "" : type); // Toggle selection
+    setSelectedType(type === selectedType ? "" : type);
   }
 
   function showAllProducts() {
     setIsTopRated(false);
     setSelectedType("");
+    setSortOrder("");
   }
 
-  // Apply all active filters whenever state changes
+  function sortProducts(order) {
+    setSortOrder(order);
+  }
+
   useEffect(() => {
-    let updatedProducts = item; // Always start from the original list
+    let updatedProducts = item;
 
     if (isTopRated) {
       updatedProducts = updatedProducts.filter((res) => res.rating > 4.2);
@@ -44,8 +49,15 @@ function Products() {
       updatedProducts = updatedProducts.filter((res) => res.type === selectedType);
     }
 
+    if (sortOrder === "lowToHigh") {
+      updatedProducts = [...updatedProducts].sort((a, b) => a.price - b.price);
+     
+    } else if (sortOrder === "highToLow") {
+      updatedProducts = [...updatedProducts].sort((a, b) => b.price - a.price);
+    }
+
     setFilteredProducts(updatedProducts);
-  }, [isTopRated, selectedType]); // Runs whenever filter states change
+  }, [isTopRated, selectedType, sortOrder]);
 
   return (
     <div className="product">
@@ -63,6 +75,12 @@ function Products() {
         <Iron ironFunc={() => filterByType("iron")} />
         <Strip stripFunc={() => filterByType("strip")} />
         <Spekar spekarFunc={() => filterByType("spekar")} />
+      </div>
+
+      {/* Sorting Section */}
+      <div className="sort-buttons">
+        <button onClick={() => sortProducts("lowToHigh")}>Price: Low to High</button>
+        <button onClick={() => sortProducts("highToLow")}>Price: High to Low</button>
         <TopRatedProduct topRatedFunc={toggleTopRated} />
       </div>
 
@@ -76,3 +94,4 @@ function Products() {
 }
 
 export default Products;
+

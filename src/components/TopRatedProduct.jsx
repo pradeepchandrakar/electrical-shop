@@ -9,7 +9,7 @@ function TopRatedProduct(props){
 
   return(
     <>
-    <button onClick={handleTopRated}>Top Rating</button>
+    <button onClick={handleTopRated}>Top Rated Product</button>
     </>
   )
   
