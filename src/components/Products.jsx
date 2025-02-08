@@ -5,7 +5,7 @@ import { item } from "../utils/mockData";
 import TopRatedProduct from "./TopRatedProduct";
 import Bulb from "./Bulb";
 import Cooler from "./Cooler";
-import Fan from "./Fan";
+import Fan from "./fan";
 import Iron from "./Iron";
 import Strip from "./Strip";
 import Spekar from "./Spekar";
@@ -56,13 +56,14 @@ function Products() {
       {/* Filters Section */}
       <div className="filter-buttons">
         <button onClick={showAllProducts}>All</button>
-        <TopRatedProduct topRatedFunc={toggleTopRated} />
+        
         <Bulb bulbFunc={() => filterByType("bulb")} />
         <Cooler coolerFunc={() => filterByType("cooler")} />
         <Fan fanFunc={() => filterByType("fan")} />
-        <Iron IronFunc={() => filterByType("iron")} />
-        <Strip StripFunc={() => filterByType("strip")} />
-        <Spekar SpekarFunc={() => filterByType("spekar")} />
+        <Iron ironFunc={() => filterByType("iron")} />
+        <Strip stripFunc={() => filterByType("strip")} />
+        <Spekar spekarFunc={() => filterByType("spekar")} />
+        <TopRatedProduct topRatedFunc={toggleTopRated} />
       </div>
 
       <div className="prodbox">
