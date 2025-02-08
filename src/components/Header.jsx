@@ -1,7 +1,10 @@
 import { useState } from 'react';
-
+import useOnlineStatus from '../utils/useOnlineStatus';
 
 function Header(){
+
+  const onlineStatus = useOnlineStatus()
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -19,6 +22,9 @@ function Header(){
       </button>
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <ul>
+        <li>
+          {onlineStatus? "🛜" :"🚫" }
+         </li>
          
         <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
