@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import useOnlineStatus from '../utils/useOnlineStatus';
+import HomePage from './HomePage';
 
 function Header(){
 
@@ -11,11 +12,13 @@ function Header(){
     setIsOpen(!isOpen);
   };
 
+  
+
   return(
     <>
      <nav className="navbar">
       <div className="navbar-brand">
-        <h1>Logo</h1>
+        <h1 className='log'><span className='logo1'>Chandrakar </span><span>Electrical</span> </h1>
       </div>
       <button className="navbar-toggle" onClick={toggleNavbar}>
         <span className="navbar-toggle-icon"></span>
@@ -26,15 +29,15 @@ function Header(){
           {onlineStatus? "🛜" :"🚫" }
          </li>
          
-        <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+       <li><a href="service">Services </a></li>       
+          <li><a href="/about">About Us </a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Reviews</a></li>
         </ul>
       </div>
     </nav>
+    <HomePage/>
 
     </>
   )

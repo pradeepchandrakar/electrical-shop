@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+body {
+  font-family: 'Alata', sans-serif;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background-color:rgb(223, 28, 28);
   color: #fff;
 }
 
@@ -30,9 +34,11 @@
 .navbar-menu {
   display: none;
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  
   padding: 1rem;
-  background-color: #333;
+  margin-right: 20px;
   color: #fff;
   position: absolute;
   top: 100%;
@@ -64,8 +70,18 @@
 .navbar-menu a {
   color: #fff;
   text-decoration: none;
+  font-size:larger;
 }
-
+.navbar-menu a:hover{
+  color: orangered;
+  font-size: larger;
+}
+.logo1{
+  color: orangered;
+}
+.log{
+  color: white;
+}
 @media (min-width: 768px) {
   .navbar-menu {
     display: flex;
@@ -87,13 +103,15 @@
   left: 0;
   width: 100%;
   padding: 10px;
-  background-color: #333;
+  background-color: black;
+  border-bottom: 3px solid orangered;
   z-index: 1000;
 }
 
 .navbar-menu {
   width: 100%;
   position: static;
+  
 }
 .filter-buttons {
   margin: 20px;
@@ -107,7 +125,7 @@
   justify-content: center;
 }
 button {
-  background-color: #007bff; /* Blue color */
+  background-color:orangered; /* Blue color */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -122,8 +140,10 @@ button {
 
 /* Hover effect */
 button:hover {
-  background-color: #0056b3; /* Darker blue */
-  transform: scale(1.05); /* Slightly enlarge */
+  background-color:white; /* Darker blue */
+  transform: scale(1.05);
+  color: orangered; 
+  border: 1px solid orangered;/* Slightly enlarge */
 }
 
 /* Click animation */
@@ -174,7 +194,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* product card styling */
@@ -195,7 +215,7 @@ h1 {
 /* product image */
 .product-card img {
   width: 100%;
-  height: 180px;
+  height: 280px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -218,7 +238,7 @@ h1 {
 /* Cuisines text */
 .product-card p {
   font-size: 14px;
-  color: #666;
+  color: black;
   margin-top: 5px;
 }
 
@@ -246,3 +266,116 @@ h1 {
   border: black solid 2px;
  }
 
+
+
+
+/* Ensure full-screen background with smooth transitions */
+
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Background image that smoothly transitions */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Overlay text styling */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  border: 2px solid orangered;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+ 
+}
+
+.home-subtitle {
+  font-size: 20px;
+}
+
+/* about as style */
+.aboutPage{
+  height: 80vh;
+  margin-top: 30px;
+}
+.aboutHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.aboutHading{
+  font-size:45px ;
+  color: orangered;
+}
+.aboutLogo{
+  color: black;
+}
+.aboutHeader p{
+  text-align: center;
+  font-size: 17px;
+  
+}
+
+
+.aboutContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+}
+.aboutImage{
+  display: flex;
+ width: 45%;
+ align-items: center;
+ justify-content: right;
+}
+.aboutText{
+ width: 60%;
+ text-align: left;
+}
+.aboutText p{
+  width: 530px;
+  font-size: 17px;
+  font-family: 'Alata', sans-serif;
+  text-align: left;
+}
+.aboutText{
+  font-family: 'Alata', sans-serif;
+font-size: 16px;
+}
+.aboutText button{
+  padding: 15px 20px 15px 20px;
+  font-size: 18px;
+}
