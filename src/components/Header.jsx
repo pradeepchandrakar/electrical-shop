@@ -32,12 +32,12 @@ function Header(){
         <li><a href="/">Home</a></li>
        <li><a href="service">Services </a></li>       
           <li><a href="/about">About Us </a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
           <li><a href="#">Reviews</a></li>
         </ul>
       </div>
     </nav>
-    <HomePage/>
+   
 
     </>
   )

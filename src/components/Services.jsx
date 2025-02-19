@@ -1,24 +1,59 @@
 import React from 'react'
-
+import Header from './header'
 function Services() {
   return (
-    <div>
-     <div className="service-section">
-        <h2 className="service-title">Our Services</h2>
-        <ul className="service-list">
-          <li><span className="service-bold">Electrical Installations:</span> Professional installation services for homes and businesses.</li>
-          <li><span className="service-bold">Wiring & Cabling:</span> High-quality wiring and cabling solutions for all needs.</li>
-          <li><span className="service-bold">Lighting Solutions:</span> Indoor and outdoor lighting design and installation.</li>
-          <li><span className="service-bold">Maintenance & Repairs:</span> Reliable electrical maintenance and repair services.</li>
-          <li><span className="service-bold">Cooler Repairing:</span> Expert repair services for air coolers of all types.</li>
-          <li><span className="service-bold">Fan Repairing:</span> Professional repair services for ceiling, table, and exhaust fans.</li>
-          <li><span className="service-bold">AC Repairing:</span> Comprehensive air conditioning repair and maintenance services.</li>
-          <li><span className="service-bold">Refrigerator Repairing:</span> Expert services for refrigerator repairs and maintenance.</li>
-          <li><span className="service-bold">Washing Machine Repairing:</span> Professional repair services for washing machines of all brands.</li>
-          <li><span className="service-bold">All Electrical Product Repairing:</span> Comprehensive repair services for various electrical appliances.</li>
-          <li><span className="service-bold">Home Service:</span> Convenient home service for electrical repairs and installations.</li>
-        </ul>
+    <div className='service' >
+      <Header/>
+     <div className='serviceHeading'>
+      <h1><span className='logo'>Our </span>Service</h1>
+      <p>We are locally owned and operated which makes our services causal as they
+are done by friendly and helpful technicians.
+
+</p>
+     </div>
+     <div className="sericeontainer">
+      <div className='serviceBox'>
+        
+      <i className="fa-solid fa-lightbulb icon"></i>
+        <h3>Electrical</h3>
+        <p>Wiring, Remodels and Additions,
+        Heat detectors</p>
       </div>
+      <div className='serviceBox'>
+      <i className="fa fa-fire-extinguisher icon"></i>
+        <h3>Heatire</h3>
+        <p>Wiring, Remodels and Additions,
+        Heat detectors</p>
+      </div>
+      <div className='serviceBox'>
+      <i className="fa fa-shield icon"></i>
+        <h3>Quality</h3>
+        <p>Wiring, Remodels and Additions,
+        Heat detectors</p>
+      </div>
+      </div>
+      <br />
+      <div className='sericeontainer'>
+      <div className='serviceBox'>
+      <i className="fa fa-camera-retro icon"></i>
+<h3>Security Systems</h3>
+<p>Wiring, Remodels and Additions,
+Heat detectors</p>
+      </div>
+      <div className='serviceBox'>
+      <i className="fa fa-gears icon"></i>
+        <h3>Panels Changes</h3>
+        <p>Wiring, Remodels and Additions,
+        Heat detectors</p>
+      </div>
+      <div className='serviceBox'>
+      <i className="fa fa-wrench icon"></i>
+        <h3>Trouble Shooting</h3>
+        <p>Wiring, Remodels and Additions,
+        Heat detectors</p>
+      </div>
+     </div>
+    
     </div>
     
   )

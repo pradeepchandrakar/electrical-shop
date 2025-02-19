@@ -326,6 +326,7 @@ h1 {
 .aboutPage{
   height: 80vh;
   margin-top: 30px;
+  margin-top: 8%;
 }
 .aboutHeader{
   display: flex;
@@ -378,4 +379,106 @@ font-size: 16px;
 .aboutText button{
   padding: 15px 20px 15px 20px;
   font-size: 18px;
+}
+.service{
+  margin-bottom: 5%;
+}
+.serviceHeading{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 6.5%;
+}
+.serviceHeading h1{
+  color: orangered;
+  font-size: 45px;
+  margin-bottom: -10px;
+}
+.serviceHeading .logo{
+  color: black;
+}
+.icon{
+  font-size: 70px;
+  padding: 20px;
+  color: orangered;
+  width: 80px;
+  height: 80px;
+}
+.icon:hover{
+  color: white;
+  background-color: orangered;
+  
+  
+  border-radius: 100%;
+}
+
+
+.sericeontainer{
+  display: flex;
+  
+  flex-direction: row(3);
+  justify-content: space-evenly;
+  
+  
+}
+.serviceBox{
+  text-align: center;
+  
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.section{
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 10%;
+  
+  
+  gap: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+  text-align: left;
+}
+.contact h1{
+  color: orangered;
+  font-size: 30px;
+}
+.contact p{
+  font-size: 16px;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 70%;
+  gap: 20px;
+  
+  
+}
+.contact input,textarea{
+  padding: 6px 12px;
+  
+
+}
+textarea{
+  height: 150px;
+}
+.contactInfo h1{
+  color: orangered;
 }
