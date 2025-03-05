@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from './header'
+
 function Services() {
   return (
     <div className='service' >
-      <Header/>
+      
      <div className='serviceHeading'>
       <h1><span className='logo'>Our </span>Service</h1>
       <p>We are locally owned and operated which makes our services causal as they

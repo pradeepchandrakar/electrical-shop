@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 body {
   font-family: 'Alata', sans-serif;
@@ -481,4 +486,74 @@ textarea{
 }
 .contactInfo h1{
   color: orangered;
+}
+a{
+  text-decoration: none;
+}
+
+
+/* error page css */
+/* Error Page Styles */
+/* Error Page Styles */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a202c;
+  color: white;
+  text-align: center;
+}
+
+.error-title {
+  margin-top: -20px;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #3b82f6;
+  text-shadow: 4px 4px 10px rgba(59, 130, 246, 0.5);
+}
+
+.error-message {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.error-image {
+  width: 400px;
+  height: auto;
+  margin-top: 20px;
+  animation: float 3s infinite ease-in-out;
+  margin-top: -90px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.error-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(59, 130, 246, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.error-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(59, 130, 246, 0.7);
 }

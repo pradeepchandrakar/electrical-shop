@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Products from "./Products";
 // Make sure this file exists
 
 const HomePage = () => {
@@ -20,6 +21,8 @@ const HomePage = () => {
   }, []);
 
   return (
+    <>
+   
     <div className="homePage">
     <div className="home-container">
       {/* Background Image Layer */}
@@ -35,6 +38,8 @@ const HomePage = () => {
       </div>
     </div>
     </div>
+    <Products/>
+    </>
   );
 };
 

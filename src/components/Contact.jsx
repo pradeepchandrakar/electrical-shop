@@ -1,9 +1,9 @@
 import React from 'react'
-import Headers from "./Header"
+
 function Contact() {
   return (
     <>
-    <Headers/>
+   
     <div className='section'>
      
       <div className='contact'>

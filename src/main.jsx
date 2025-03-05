@@ -7,28 +7,46 @@ import Services from "./components/Services"
 import AboutUs from"./components/About.jsx"
 import Contact from "./components/Contact.jsx"
 import Reviews from "./components/Reviews.jsx"
+import ProductDetail from './components/ProductDetail.jsx';
+import HomePage from './components/HomePage.jsx';
+import Error from './components/Error.jsx';
 
 const appRouter = createBrowserRouter([
   {
     path :"/",
     element : <App/>,
+    errorElement:<Error/>,
+    children:[
+      {
+        path:"/",
+        element:<HomePage/>,
+       
+      },
+      {
+        path :"service",
+        element:<Services/>,
+        
+      },
+      {
+        path:"about",
+        element:<AboutUs/>
+      },
+      {
+      path :"contact",
+      element : <Contact/>,
+    },
+    {
+    path:"reviews",
+    element:<Reviews/>
+    },
+    {
+      path:"/:id",
+      element:<ProductDetail/>
+    
+    }
+    ]
   },
-  {
-    path :"service",
-    element:<Services/>
-  },
-  {
-    path:"about",
-    element:<AboutUs/>
-  },
-  {
-  path :"contact",
-  element : <Contact/>,
-},
-{
-path:"reviews",
-element:<Reviews/>
-},
+ 
   ])
   
   createRoot(document.getElementById('root')).render(

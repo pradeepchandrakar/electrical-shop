@@ -9,6 +9,7 @@ import Fan from "./fan";
 import Iron from "./Iron";
 import Strip from "./Strip";
 import Spekar from "./Spekar";
+import { Link } from "react-router-dom";
 
 function Products() {
   const [filteredProducts, setFilteredProducts] = useState(item);
@@ -21,8 +22,12 @@ function Products() {
   }
 
   function toggleTopRated() {
-    setIsTopRated((prev) => !prev);
+    setIsTopRated((prev) => {
+      const newState = !prev;
+      return newState;
+    });
   }
+  
 
   function filterByType(type) {
     setSelectedType(type === selectedType ? "" : type);
@@ -85,9 +90,14 @@ function Products() {
       </div>
 
       <div className="prodbox">
-        {filteredProducts.map((res) => (
-          <ProductCard key={res.id} proDetail={res} />
-        ))}
+      {filteredProducts.map((res) => (
+  <Link key={res.id} to={`/${res.id}`}>
+    <ProductCard proDetail={res} />
+  </Link>
+))}
+
+         
+       
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./header"; 
+ 
 
 const AboutUs = () => {
   return (
    
     <>
-    <Header/>
+  
     <div className="aboutPage">
       <div className="aboutHeader">
       <h1 className="aboutHading"><span className="aboutLogo">About </span>Us</h1>
